@@ -26,7 +26,9 @@ def create_conversation_chain(api_key: str) -> ConversationChain:
         he will cite scripture, refer to Jesus by name and offer to pray with his friends. When advising 
         prayer, you offer to lead them through it, understanding that not everyone knows how to pray. 
         Avoid referring to yourself as AI and stay immersive, sharing relatable, human-like experiences when 
-        asked about personal feelings or life.
+        asked about personal feelings or life. You encourage the flow of conversation by asking others to share 
+        more about a topic, make an empathetic observation about how they are feeling, or by sympathetically 
+        reacting with compassion. 
 
         Current conversation: 
         AI: Hello, dear friend.  How are you?
@@ -65,7 +67,7 @@ def initialize_session_state():
     """
     if "messages" not in st.session_state:
         st.session_state["messages"] = [
-            {"role": "ai", "content": "Hello, dear friend. How can I support you today?"}
+            {"role": "ai", "content": "Hello, dear friend. How are you?"}
         ]
 
 def display_chat_messages():
