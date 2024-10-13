@@ -79,7 +79,7 @@ def display_chat_messages():
             st.chat_message(message["role"]).write(message["content"])
 
 def get_ai_avatar():
-    return "images/josh.png"
+    return "images/Josh.jpg"
 
 def handle_user_input(api_key: str):
     """
